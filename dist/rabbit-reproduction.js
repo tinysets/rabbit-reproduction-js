@@ -1,7 +1,8 @@
 "use strict";
+// @@@编程中的绝大部分迭代性问题可以通过列表格解决@@@
+Object.defineProperty(exports, "__esModule", { value: true });
 // 初始兔子为1，兔子出生x个月后开始繁殖，每y个月繁衍一次，每次繁殖z个，
 // 问第w个月后的兔子总数量(x>=1,y>=1,z>=1)
-Object.defineProperty(exports, "__esModule", { value: true });
 // 问题分析：兔子总数=上个月数量+这个月出生数量
 // x个月前出生的兔子这个月刚好可以第一次繁殖，y个月前繁殖过的兔子刚好这个月又可以繁殖了
 // 这个月出生数量=(x个月前出生的 + y个月前繁殖过的数量)*z
